@@ -1,26 +1,17 @@
-import React from 'react';
+import '../App.css'
 
 const Header = () => {
-  return (
-    <header style={headerStyle}>
-      <div style={headerContainerStyle}>
-        <h1>My React App</h1>
-      </div>
-    </header>
-  );
-};
+    return (
+      <header className="header">
+        <div className="header-container">
+          <h1>My React App</h1>
+        </div>
+      </header>
+    );
+  };
+  
+  export default Header;
 
-const headerStyle = {
-  backgroundColor: '#282c34',
-  color: 'white',
-  width: '100%',
-  padding: '10px 0',
-};
 
-const headerContainerStyle = {
-  maxWidth: '1280px',
-  margin: '0 auto',
-  textAlign: 'center',
-};
 
-export default Header;
+ 
