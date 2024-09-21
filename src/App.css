@@ -1,8 +1,6 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  /* Ensure #root takes full width of the page but allow the content inside to be centered */
+  width: 100%;
 }
 
 .logo {
@@ -11,9 +9,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -39,4 +39,12 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.app-container {
+  padding: 20px;
+  text-align: center;
+  min-height: 80vh;
+  max-width: 1280px;
+  margin: 0 auto; /* Center content horizontally */
 }
